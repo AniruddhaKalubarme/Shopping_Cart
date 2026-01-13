@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <div className="bg-black text-white p-2 flex justify-around items-center fixed top-0 w-full z-50 shadow-md shadow-amber-500/50">
       <NavLink to="/" className='inline-block'>
-        <img src='/logo.png' width="100px"></img>
+        <img src={`${import.meta.env.BASE_URL}logo.png`} width="100px"></img>
       </NavLink>
       <div className='flex items-center gap-8'>
         <NavLink to='/'>Home</NavLink>

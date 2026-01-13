@@ -4,14 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import { Provider } from 'react-redux'
 import Store from './redux/Store.jsx'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-      <Provider store={Store}>
-        <App />
-        <Toaster/>  
-      </Provider>
-  </BrowserRouter>
+  <HashRouter>
+    <Provider store={Store}>
+      <App />
+      <Toaster />
+    </Provider>
+  </HashRouter>
 )
